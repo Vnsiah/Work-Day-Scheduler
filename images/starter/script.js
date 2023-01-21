@@ -40,5 +40,22 @@ $(`<div class="row time-block past">
 
 
 
+// 'schooltime'
+// $("textarea")
+// $("textarea").text(localStorage.getItem("9am"))
+
+// moment().format("h")
+
+// $("textarea").addclass("future")
+
+
+// localStorage
+// storage {9a: 'schooltime', length: 1}
+// localStorage.setItem("9am", )
+
+
+
+
+
 
    
