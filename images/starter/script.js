@@ -15,7 +15,7 @@
 //
 //  }
 
-let timeblocks = [{hour:9,description:"I have a meeting"}, {hour:10,description:"i have a meeting"},{hour:11,description:"i have a meeting"},{hour:12,description:"i have a meeting"},{hour:13,description:"i have a meeting"},{hour:14,description:"I have a meeting"}];
+let timeblocks = [{hour:12,description:"I have a meeting"}, {hour:13,description:""},{hour:14,description:""},{hour:15,description:""},{hour:16,description:""},{hour:17,description:""}];
 
 var currentDate = moment().format("dddd, MMMM Do YYYY");
 // console.log(currentDate);
@@ -29,8 +29,8 @@ const timeblock = timeblocks[i];
 
 $(`<div class="row time-block past">
 <div class="col-2 hour">${timeblock.hour+"PM"}</div>
-<textarea class="col-8 description">${timeblock.description}</textarea>
-<button class="btn saveBtn col-2">
+<textarea class="col-9 description">${timeblock.description}</textarea>
+<button class="btn saveBtn col-1">
     <i class="fa fa-save"></i>
 </button>
 </div>`).appendTo(".container")
