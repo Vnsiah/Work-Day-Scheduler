@@ -15,6 +15,29 @@
 //
 //  }
 
+let timeblocks = [{hour:9,description:"I have a meeting"}, {hour:10,description:"i have a meeting"},{hour:11,description:"i have a meeting"},{hour:12,description:"i have a meeting"},{hour:13,description:"i have a meeting"},{hour:14,description:"I have a meeting"}];
+
+var currentDate = moment().format("dddd, MMMM Do YYYY");
+// console.log(currentDate);
+$("#currentDay").text(currentDate);
+var currentTime = moment().format("H");
+
+
+
+for (let i = 0; i < timeblocks.length; i++) {
+const timeblock = timeblocks[i];
+
+$(`<div class="row time-block past">
+<div class="col-2 hour">${timeblock.hour+"PM"}</div>
+<textarea class="col-8 description">${timeblock.description}</textarea>
+<button class="btn saveBtn col-2">
+    <i class="fa fa-save"></i>
+</button>
+</div>`).appendTo(".container")
+
+
+}
+
 
 
 
