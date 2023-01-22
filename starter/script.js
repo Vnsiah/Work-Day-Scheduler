@@ -55,7 +55,3 @@ $(`<div class="row time-block future">
 
 
 
-
-
-
-   
