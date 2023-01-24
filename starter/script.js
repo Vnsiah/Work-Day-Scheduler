@@ -44,7 +44,7 @@ $(`<div class="row time-block future">
 
 
 function savePlannerData() {
-    localStorage.setItem("timeblock", JSON.stringify(timeblock));
+    localStorage.setItem("timeblock", JSON.stringify(timeblocks));
 
 }
 
