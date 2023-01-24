@@ -17,10 +17,12 @@
 
 let timeblocks = [{hour:12,description:"I have a meeting"}, {hour:13,description:""},{hour:14,description:""},{hour:15,description:""},{hour:16,description:""},{hour:17,description:""}];
 
-var currentDate = moment().format("dddd, MMMM Do YYYY");
+let currentDate = moment().format("dddd, MMMM Do YYYY");
 // console.log(currentDate);
 $("#currentDay").text(currentDate);
-var currentTime = moment().format("H");
+let currentTime = moment().format("H");
+let textarea = $(this).siblings('.description').val();
+let PlannerData = ""
 
 
 
@@ -40,18 +42,12 @@ $(`<div class="row time-block future">
 
 
 
-// 'schooltime'
-// $("textarea")
-// $("textarea").text(localStorage.getItem("9am"))
 
-// moment().format("h")
+function savePlannerData() {
+    localStorage.setItem("timeblock", JSON.stringify(timeblock));
 
-// $("textarea").addclass("future")
+}
 
-
-// localStorage
-// storage {9a: 'schooltime', length: 1}
-// localStorage.setItem("9am", )
 
 
 
